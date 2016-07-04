@@ -2,11 +2,11 @@ try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
+import io
 
-
-with open('README.md') as f:
+with io.open('README.md', encoding='utf-8') as f:
     readme = f.read()
-with open('LICENSE') as f:
+with io.open('LICENSE', encoding='utf-8') as f:
     license = f.read()
 
 
